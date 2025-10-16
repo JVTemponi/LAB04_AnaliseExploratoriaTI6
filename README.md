@@ -1,47 +1,33 @@
-# LAB04_AnaliseExploratoriaTI6
-
-
 # Projeto de Pesquisa
 
-### **A Evolução da Cultura de Testes**
+## **A Evolução da Cultura de Testes**
 
 A Evolução da Cultura de Testes em Projetos Maduros: Um Estudo de Caso Múltiplo sobre a Evolução de Estratégias, Ferramentas e Sofisticação.
 
-### 1 - GQMs
+## 1 - GQMs
 
-**RQ1: Como a estratégia de testes, refletida na proporção dos tipos de teste, evolui entre as diferentes releases de um projeto?**
+### RQ1: Como a estratégia de testes, refletida na proporção dos tipos de teste, evolui entre as diferentes releases de um projeto?
 
 - **Métrica 1.1: Proporção de Tipos de Teste (por arquivos/LOC):** No momento de cada release (tag), calcular a porcentagem de código dedicada a testes unitários, de integração e E2E. Isso mostrará como a "pirâmide de testes" do projeto muda ao longo do tempo.
 
-**RQ2: Como o ecossistema de ferramentas de teste evolui ao longo das releases, marcado pela adoção de novas bibliotecas ou migrações significativas? 
+### RQ2: Como o ecossistema de ferramentas de teste evolui ao longo das releases, marcado pela adoção de novas bibliotecas ou migrações significativas? 
 
- Major x Mirror Realese**
+ Major x Mirror Realese
 
 - **Métrica 2.1: Censo de Ferramentas por Release:** No momento de cada release, analisar o arquivo de build (`pom.xml`, `package.json`, etc.) para registrar o conjunto de ferramentas de teste e suas versões.
 - **Métrica 2.2: Eventos de Adoção/Migração:** Identificar em qual ciclo de release uma nova ferramenta de teste foi introduzida ou uma migração de versão major ocorreu.
-    - Existe uma correlação entre o tipo de release e o impacto nos testes? Acho que as grandes evoluções na nossa forma de testar (cultura, ferramentas) coincidem com as versões major, enquanto os patches exigem apenas testes focados na correção.
-    
-    keycloak
-    
-    Elaborar RQ para isso
-    1 ) Separar em pipelines
-    
-    1. Conceito de shift-left
-    2. Numero de contribuidores
-    
+    - Existe uma correlação entre o tipo de release e o impacto nos testes? Acho que as grandes evoluções na nossa forma de testar (cultura, ferramentas) coincidem com as versões major, enquanto os patches exigem apenas testes focados na correção. 
 
-**RQ3: A sofisticação e a qualidade dos testes, refletidas pela cobertura e pela qualidade interna do código, aumentam com a maturidade do projeto?**
+### RQ3: A sofisticação e a qualidade dos testes, refletidas pela cobertura e pela qualidade interna do código, aumentam com a maturidade do projeto?
 
 - **Métrica 3.1: Evolução da Cobertura de Testes:** Medir a porcentagem de cobertura de testes no momento de cada release principal.
 - **Métrica 3.2: Densidade de `Test Smells` por Release:** No momento de cada release, calcular o número de `test smells` por mil linhas de código de teste (KLOC).  - TestSmellDector
 
-**RQ4: Qual a relação entre o esforço de teste e o esforço de manutenção dentro de um ciclo de release?**
+### RQ4: Qual a relação entre o esforço de teste e o esforço de manutenção dentro de um ciclo de release?
 
 - **Métrica 4.1: Contagem de Commits de Teste por Ciclo:** No período entre duas releases, contar o número de commits que introduzem ou modificam significativamente o código de teste.
 - **Métrica 4.2: Contagem de Commits de Correção de Bugs por Ciclo:** No mesmo período, contar o número de commits cujas mensagens indicam uma correção de bug (ex: contêm "fix", "bug", "patch", etc.).
 - **Métrica 4.3: Análise de Correlação:** Ao longo de todos os ciclos de release de um projeto, realizar uma análise de correlação estatística entre a Métrica 4.1 e a Métrica 4.2 para verificar se um maior esforço em testes em um ciclo se relaciona com um menor esforço de correção no ciclo seguinte, ou outras relações.
-
-- Cresceu conta
 
 ## 2. Metodologia
 

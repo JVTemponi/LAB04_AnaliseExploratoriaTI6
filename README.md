@@ -123,3 +123,7 @@ Qual a relação entre o esforço dedicado a atividades de teste e o esforço su
         - **Pandas:** Para carregar, manipular e agregar os dados do seu CSV.
         - **Matplotlib / Seaborn:** Para visualização de dados (essencial para entender as relações).
         - **SciPy / Statsmodels:** Para realizar os testes estatísticos de correlação e regressão.
+
+
+# Dashboard
+https://claude.ai/public/artifacts/ea3d419c-3515-4aaf-a4d0-b9ffabd72ea6
